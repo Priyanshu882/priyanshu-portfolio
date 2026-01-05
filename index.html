@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "3Ywn39gC3XdXRsqYy",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Priyanshu Mudgal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Priyanshu Mudgal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <img src="assets/menu.png" alt="menu-icon">
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content -->
+     <main>
+        <!-- profile section -->
+        <section id="profile">
+            <div class="section-pic-container">
+                <img src="assets/dp.png" alt="my-profile-image">
+            </div>
+            <div class="section-text">
+                <p class="text-p1">Hello, I'm</p>
+                <h1 class="title">Priyanshu Mudgal</h1>
+                <p class="text-p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/priyanshu-resume.pdf')">
+                        Resume 
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info 
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="assets/linkedin.png" alt="linkedin-logo" onclick="location.href='https://www.linkedin.com/in/priyanshumudgal/'" class="icon">
+                    <img src="assets/github.png" alt="github-logo" onclick="location.href='https://github.com/Priyanshu882'" class="icon">
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about">
+            <p class="text-p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="about-main">
+                <div>
+                    <div class="about-pic-container">
+                        <img src="assets/about.png" alt="porfile-image" class="about-pic">
+                    </div>
+                    <!-- <div class="about-details-container">
+                                <div class="about-containters">
+                                    <div class="details-container">
+                                        <img src="assets/education.png" alt="education-icon" class="icon">
+                                        <h3>Education</h3>
+                                        <p>B.Tech Computer Science <br><strong>College:</strong> G.L Bajaj</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                </div>
+                <div class="aboutme-content">
+                    <h2>Code. Learn. Build. Repeat.</h2>
+                    <p>I’m Priyanshu Mudgal, a developer who enjoys building things that live on the web. From crafting
+                        responsive
+                        UIs to understanding how systems work behind the scenes, I’m always curious about improving both my code
+                        and
+                        my approach to problem-solving.</p>
+                    <p>With experience in React, JavaScript, Python, and automation, I focus on writing clean, readable, and
+                        practical code. I believe consistent learning and real-world projects are the best way to grow as a
+                        software
+                        engineer — and that’s exactly what I aim to do.</p>
+                    <button class="btn btn-color-1" onclick="location.href='./#projects'">View Projects</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects">
+            <p class="text-p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="projects-details-container">
+                <div class="project-containers">
+                    <div class="details-container color-container">
+                        <div class="project-image-container">
+                            <img src="assets/p1.png" alt="parkinson-image" class="project-img">
+                        </div>
+                        <h2 class="project-title">MedHock Healthcare</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Priyanshu882/parkinsons-preduction-system'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com/Priyanshu882/parkinsons-preduction-system'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="project-image-container">
+                            <img src="assets/p2.png" alt="parkinson-image" class="project-img">
+                        </div>
+                        <h2 class="project-title">Parkinson's Disease Detection System</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Priyanshu882/parkinsons-preduction-system'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com/Priyanshu882/parkinsons-preduction-system'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="project-image-container">
+                            <img src="assets/p3.png" alt="parkinson-image" class="project-img">
+                        </div>
+                        <h2 class="project-title">Crypto Hunt Tracker</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Priyanshu882/parkinsons-preduction-system'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com/Priyanshu882/parkinsons-preduction-system'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+         <section id="contact">
+            <p class="text-p1">Get in Touch</p>
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Here...</h1>
+                        <div class="contact-info">
+                            <img src="assets/mail.png" alt="mail-icon" class="icon contact-icon">
+                            <p>mudgal.priyanshu15@gmail.com</p>
+                        </div>
+                        <div class="contact-info">
+                            <img src="assets/mobile.png" alt="mobile-icon" class="icon contact-icon">
+                            <p>8882672793</p>
+                        </div>
+                        <div class="social-icons">
+                            <img src="assets/instagram.png" alt="insta-icon" class="icon social-contact-icon" onclick="location.href='https://www.instagram.com/priyansh_mudgal15'">
+                            <img src="assets/linkedin.png" alt="linkedin-icon" class="icon social-contact-icon" onclick="location.href='https://www.linkedin.com/in/priyanshumudgal/'">
+                            <img src="assets/github.png" alt="github-icon" class="icon social-contact-icon" onclick="location.href='https://github.com/Priyanshu882'">
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form onsubmit="sendMail(); return false;">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-color-1">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+     </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    
+     <!-- footer -->
+    <footer>
+        <p>Copyright &copy; 2026 Priyanshu Mudgal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Script/main.js"></script>
+</body>
+</html>
